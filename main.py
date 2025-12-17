@@ -9,7 +9,7 @@ from common.logger import log
 
 
 def init_push_channel(push_channel_config_list: list):
-    log.info("开始初始化推送通道")
+    log.info("推送通道")
     for config in push_channel_config_list:
         if config.get('enable', False):
             if push_channel.push_channel_dict.get(config.get('name', '')) is not None:
